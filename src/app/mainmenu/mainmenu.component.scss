@@ -1,0 +1,14 @@
+@import "src/app/constants.scss";
+
+.mainmenu-container {
+  width: 100%;
+  background-color: $color-blue-main;
+  height: 60px;
+  color: $color-text-reverse;
+  padding: 10px 40px
+}
+
+.mainmenu-text {
+  margin: 0;
+  font-size: 1.5rem;
+}

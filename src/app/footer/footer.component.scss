@@ -1,0 +1,14 @@
+@import "src/app/constants.scss";
+
+.footer-container {
+  width: 100%;
+  background-color: $color-black-main;
+  height: 60px;
+  color: $color-text-reverse;
+  padding: 10px 40px
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1.1rem;
+}
