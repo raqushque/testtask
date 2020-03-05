@@ -20,6 +20,11 @@ export class MapComponent implements OnInit, AfterViewInit {
   imageURLs: string[] = [];
   public markerCount;
   constructor() { }
+
+  getCoords(event) {
+    console.log(this.map.getEventCoordinate(event))
+  }
+
   placeMarkers(count) {
       let extent = this.map.getView().calculateExtent(this.map.getSize()); // координаты углов карты
       this.map.getLayers().getArray()

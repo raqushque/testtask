@@ -7,7 +7,7 @@
   </div>
 
   <div class="mappage-map-container" fxFlex="100%">
-    <div class="map" id="map"></div>
+    <div class="map" id="map" (click)="getCoords($event)"></div>
   </div>
   <canvas #canvas height="150px" width="150px" class="d-none"></canvas>
 
