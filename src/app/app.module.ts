@@ -8,6 +8,7 @@ import { MainmenuComponent } from './mainmenu/mainmenu.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'map', component: MapComponent },
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FlexLayoutModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes
     )
