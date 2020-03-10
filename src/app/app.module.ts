@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { OLMapDirective } from './directives/olmap.directive';
 
 const appRoutes: Routes = [
   { path: 'map', component: MapComponent },
@@ -22,7 +23,9 @@ const appRoutes: Routes = [
     MapComponent,
     MainmenuComponent,
     PageNotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    OLMapDirective,
+    OLMapDirective
   ],
   imports: [
     BrowserModule,

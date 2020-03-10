@@ -7,6 +7,6 @@
   </div>
 
   <div class="mappage-map-container" fxFlex="100%">
-    <div class="map" id="map" (click)="getCoords($event)"></div>
+    <div class="map" [appOLMap]="mapOptions" (mapEmit)="saveMap($event)" (click)="getCoords($event)"></div>
   </div>
 </div>

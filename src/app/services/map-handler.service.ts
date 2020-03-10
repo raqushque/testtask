@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import Map from 'ol/Map';
-import View from 'ol/View';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import Style from 'ol/style/Style';
@@ -16,18 +15,6 @@ import {IconGeneratorService} from "./icon-generator.service";
 export class MapHandlerService {
 
   constructor(private iconService: IconGeneratorService) { }
-
-  initializeMap(target: string, center, zoom: number): Map { /* создает и передает необходимые для
-                                                                инициализации карты параметры*/
-    return new Map({
-      target: target,
-      view: new View({
-        constrainResolution: true,
-        center: center,
-        zoom: zoom
-      })
-    });
-  }
 
   placeMarkers(count: number, map: Map) { // управляет генерацией и расстановкой маркеров
     let extent = map.getView().calculateExtent(map.getSize()); // координаты углов карты
